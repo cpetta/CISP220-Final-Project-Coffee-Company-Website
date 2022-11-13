@@ -72,13 +72,9 @@ main {
 }
 
 nav a {
-	color: white;
-	background: rgba(0,0,0,0.5);
 	display: block;
-	padding: 15px 25px;
-	border-radius: 5px;
 	text-decoration: none;
-	font-size: 16pt;
+	padding: 15px 25px;
 }
 
 #mainNav,
@@ -119,6 +115,32 @@ nav a {
 	font-size: 16pt;
 }
 
+
+footer {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: end;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding:20px;
+	height: 200px;
+}
+
+footer a {
+	color: black;
+}
+
+footer .left,
+footer .right {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+footer .right {
+	height: 100%;
+	justify-content: space-evenly;
+}
 
 /* page specific */
 #homepageMain {
