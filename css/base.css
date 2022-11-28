@@ -126,24 +126,6 @@ nav a {
 	font-family: "AmaticSC", "Oxygen", "Roboto", "Arial", sans-serif;
 }
 
-#aboutMain {
-	margin-top: 100px;
-	justify-self: center;
-	display: flex;
-	flex-flow: row wrap;
-	gap: 100px;
-	justify-content: center;
-}
-
-.person img {
-	border-radius: 5px;
-}
-
-.person h2,
-.person div {
-	margin-left: 5px;
-}
-
 .btn {
 	color: white;
 	background: rgba(0, 0, 0, 0.5);
@@ -219,4 +201,22 @@ footer .right {
 	color: black;
 	font-size: 16pt;
 	background: white;
+}
+
+#aboutMain {
+	margin-top: 100px;
+	justify-self: center;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 100px;
+	justify-content: center;
+}
+
+.person img {
+	border-radius: 5px;
+}
+
+.person h2,
+.person div {
+	margin-left: 5px;
 }
