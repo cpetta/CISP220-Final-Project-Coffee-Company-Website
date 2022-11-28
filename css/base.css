@@ -27,10 +27,6 @@
 	src: url(../fonts/AmaticSC-Bold.woff2) format("woff2");
 }
 
-:root {
-	--BrandColor: white;
-}
-
 /* resets */
 
 * {
@@ -45,7 +41,8 @@ body {
 	scrollbar-width: thin; /* Firefox Scrollbar */
 }
 
-h1 {
+h1,
+h2 {
 	margin: 0;
 }
 
@@ -57,6 +54,7 @@ body {
 }
 
 #mainNav,
+#aboutMain,
 footer {
 	height: fit-content;
 	max-width: 1600px;
@@ -74,7 +72,7 @@ header {
 }
 
 header,
-main {
+#homepageMain {
 	grid-column: 1;
 	grid-row: 1;
 }
@@ -95,10 +93,13 @@ nav a {
 	padding: 30px;
 	padding-bottom: 0;
 	font-size: 32pt;
-	color: var(--BrandColor);
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);
+}
+
+#mainNav {
+	color: black;
 }
 
 #subNav {
@@ -123,6 +124,24 @@ nav a {
 
 #mainCompanyName {
 	font-family: "AmaticSC", "Oxygen", "Roboto", "Arial", sans-serif;
+}
+
+#aboutMain {
+	margin-top: 100px;
+	justify-self: center;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 100px;
+	justify-content: center;
+}
+
+.person img {
+	border-radius: 5px;
+}
+
+.person h2,
+.person div {
+	margin-left: 5px;
 }
 
 .btn {
