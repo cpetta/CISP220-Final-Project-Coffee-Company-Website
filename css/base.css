@@ -55,6 +55,7 @@ body {
 
 #mainNav,
 #aboutMain,
+#contactMain,
 footer {
 	height: fit-content;
 	max-width: 1600px;
@@ -159,7 +160,11 @@ footer .right {
 
 footer .right {
 	height: 100%;
-	justify-content: space-evenly;
+	justify-content: center;
+}
+
+#footerNav a {
+	padding: 8px 25px;
 }
 
 /* page specific */
@@ -219,4 +224,30 @@ footer .right {
 .person h2,
 .person div {
 	margin-left: 5px;
+}
+
+#contactMain {
+	justify-self: center;
+	background-image: url(../images/loosebeans.jpg);
+	margin-top: 50px;
+	min-height: calc(100vh - 300px);
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#contactFormBlock {
+	background: rgba(255, 255, 255, 0.8);
+	border-radius: 20px;
+	padding: 45px;
+}
+
+#contactMain h1 {
+}
+
+form#contact {
+	display: flex;
+	flex-flow: column nowrap;
+	max-width: 500px;
 }
