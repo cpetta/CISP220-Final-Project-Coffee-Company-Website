@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>The Better Coffee Company - Homepage</title>
+
+		<link rel="preload" href="css/base.css" as="style" />
+		<link rel="preload" href="scripts/base.js" as="script" />
+		<link
+			rel="preload"
+			href="fonts/roboto-light.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin=""
+		/>
+		<link
+			rel="preload"
+			href="fonts/roboto-regular.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin=""
+		/>
+		<link
+			rel="preload"
+			href="fonts/oxygen-bold.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin=""
+		/>
+
+		<link rel="icon" href="images/icon.svg" type="image/svg" sizes="32x32" />
+
+		<meta
+			name="description"
+			content="The Better Coffee Company, offering a better way to make coffee"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="css/base.css"
+			media="print"
+			onload="this.media='all'"
+		/>
+		<noscript
+			><link rel="stylesheet" href="css/base.css" type="text/css"
+		/></noscript>
+
+		<script async defer src="scripts/base.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="mainNav">
+				<a href="index.html">
+					<img
+						class="logo"
+						src="images/logo.svg"
+						height="100"
+						width="100"
+						alt=""
+					/>
+				</a>
+				<h1 id="mainCompanyName">The Better Coffee Comany</h1>
+				<a href="cart.html"
+					><img
+						id="cartBtn"
+						class="icon"
+						src="images/icons/shopping--cart.svg"
+						height="30"
+						width="30"
+						alt="Shopping Cart"
+				/></a>
+			</nav>
+			<nav id="subNav">
+				<a class="btn" href="products.html">Products</a>
+				<a class="btn" href="aboutus.html">About Us</a>
+				<a class="btn" href="contact.html">Contact Us</a>
+			</nav>
+		</header>
+
+		<main id="productDetail">
+			<div class="breadcrumbs">
+				<a href="index.html">Home</a> > <a href="products.html">Products</a> >
+				<a href="#">Medium French Press</a>
+			</div>
+			<img
+				src="images/french-press-medium.jpg"
+				height="500"
+				width="500"
+				alt="Medium French Press"
+			/>
+			<h3 class="itemName">Medium French Press</h3>
+			<div class="rating">
+				<div class="star">⭐</div>
+				<div class="star">⭐</div>
+				<div class="star">⭐</div>
+				<div class="star">⭐</div>
+				<div class="star">⭐</div>
+				<div class="numberOfRatings">(7)</div>
+			</div>
+			<div class="price">$49.99</div>
+			<ul class="features">
+				<li>1500ML</li>
+				<li>Glass</li>
+				<li>Lightweight Plastic</li>
+				<li>Rust proof</li>
+				<li>Dishwasher Safe</li>
+			</ul>
+			<a class="addToCart btn" data-partNumber="0002" href="#">Add To Cart</a>
+			<div class="description">
+				The Medium french press balances capacity with footprint and
+				affordability. The Medium french press will make a great addition to any
+				kitchen.
+			</div>
+		</main>
+
+		<footer>
+			<div class="left">
+				<img
+					class="logo"
+					src="images/logo.svg"
+					height="100"
+					width="100"
+					alt=""
+				/>
+				<div id="social_media">
+					<a href="#"
+						><img height="32" width="32" src="images/icons/logo--facebook.svg"
+					/></a>
+					<a href="#"
+						><img height="32" width="32" src="images/icons/logo--instagram.svg"
+					/></a>
+					<a href="#"
+						><img height="32" width="32" src="images/icons/logo--twitter.svg"
+					/></a>
+					<a href="#"
+						><img height="32" width="32" src="images/icons/logo--youtube.svg"
+					/></a>
+					<a href="#"
+						><img height="32" width="32" src="images/icons/logo--discord.svg"
+					/></a>
+					<a href="#"
+						><img height="32" width="32" src="images/icons/logo--github.svg"
+					/></a>
+				</div>
+			</div>
+			<div class="center">&#169; The Better Coffee Comany</div>
+			<nav id="footerNav" class="right">
+				<a href="products.html">Products</a>
+				<a href="aboutus.html">About Us</a>
+				<a href="contact.html">Contact Us</a>
+			</nav>
+		</footer>
+	</body>
+</html>
