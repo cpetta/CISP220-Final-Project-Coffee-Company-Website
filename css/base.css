@@ -208,6 +208,38 @@ footer .right {
 	background: white;
 }
 
+#products {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-top: 30px;
+	gap: 30px;
+}
+
+.productCard {
+	background-color: rgba(255, 228, 194, 0.801);
+	border-radius: 10px;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	padding: 20px;
+}
+
+.productCard a.productDetail {
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	background-color: rgba(0, 0, 0, 1);
+	color: white;
+	border-radius: 5px;
+	transition: all 0.1s ease-in-out;
+}
+
+.productCard a.productDetail:hover {
+	background-color: rgba(0, 0, 0, 0.85);
+	border-radius: 10px;
+}
+
 #aboutMain {
 	margin-top: 100px;
 	justify-self: center;
