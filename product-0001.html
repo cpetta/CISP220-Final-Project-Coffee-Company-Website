@@ -62,7 +62,7 @@
 					/>
 				</a>
 				<h1 id="mainCompanyName">The Better Coffee Comany</h1>
-				<a href="cart.html">
+				<a id="cartBtnLink" href="cart.html">
 					<img
 						id="cartBtn"
 						class="icon"
@@ -109,7 +109,9 @@
 				<li>Rust proof</li>
 				<li>Dishwasher Safe</li>
 			</ul>
-			<a class="addToCart btn" data-partNumber="0001" href="#">Add To Cart</a>
+			<a class="addToCart btn" href="#" onclick="addToCart('0001')"
+				>Add To Cart</a
+			>
 			<div class="description">
 				The large french press is perfect for the coffee enthuziest that likes
 				to have plenty of coffee in the morning.
@@ -153,5 +155,6 @@
 				<a href="contact.html">Contact Us</a>
 			</nav>
 		</footer>
+		<script src="scripts/base.js"></script>
 	</body>
 </html>

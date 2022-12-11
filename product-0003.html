@@ -62,7 +62,7 @@
 					/>
 				</a>
 				<h1 id="mainCompanyName">The Better Coffee Comany</h1>
-				<a href="cart.html">
+				<a id="cartBtnLink" href="cart.html">
 					<img
 						id="cartBtn"
 						class="icon"
@@ -109,7 +109,9 @@
 				<li>Rust proof</li>
 				<li>Dishwasher Safe</li>
 			</ul>
-			<a class="addToCart btn" data-partNumber="0003" href="#">Add To Cart</a>
+			<a class="addToCart btn" href="#" onclick="addToCart('0001')"
+				>Add To Cart
+			</a>
 			<div class="description">
 				The Small french press is the original, highly portable coffee machine
 				that delivers the Better Coffee you love in the morning, on the road, or
@@ -154,5 +156,6 @@
 				<a href="contact.html">Contact Us</a>
 			</nav>
 		</footer>
+		<script src="scripts/base.js"></script>
 	</body>
 </html>
