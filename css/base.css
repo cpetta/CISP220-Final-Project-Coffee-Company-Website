@@ -63,13 +63,13 @@ body {
 }
 
 header {
+	align-items: center;
 	display: flex;
 	flex-flow: column nowrap;
-	align-items: center;
 	font-family: "Oxygen", "Roboto", "Arial", sans-serif;
 	font-weight: bold;
-	z-index: 1;
 	height: fit-content;
+	z-index: 1;
 }
 
 header,
@@ -80,8 +80,8 @@ header,
 
 nav a {
 	display: block;
-	text-decoration: none;
 	padding: 15px 25px;
+	text-decoration: none;
 }
 
 #mainNav,
@@ -91,11 +91,11 @@ nav a {
 }
 
 #mainNav {
-	padding: 30px;
-	padding-bottom: 0;
-	font-size: 32pt;
 	flex-flow: row nowrap;
+	font-size: 32pt;
 	justify-content: space-between;
+	padding-bottom: 0;
+	padding: 30px;
 	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);
 }
 
@@ -105,8 +105,8 @@ nav a {
 
 #subNav {
 	flex-flow: row wrap;
-	justify-content: center;
 	gap: 20px;
+	justify-content: center;
 	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -116,7 +116,7 @@ nav a {
 }
 
 #cartBtnLink {
-	position:relative;
+	position: relative;
 }
 
 #cartBtn {
@@ -129,7 +129,7 @@ nav a {
 
 #cartQty {
 	align-items: center;
-	background: rgba(80,80,80,1);
+	background: rgba(80, 80, 80, 1);
 	border-radius: 50%;
 	color: white;
 	display: flex;
@@ -163,14 +163,14 @@ nav a {
 }
 
 footer {
+	align-items: end;
 	background-color: rgb(194, 164, 140);
 	display: flex;
 	flex-flow: row nowrap;
-	align-items: end;
+	height: 200px;
 	justify-content: space-around;
 	margin: 50px auto 0;
 	padding: 20px;
-	height: 200px;
 	width: 100%;
 }
 
@@ -180,9 +180,9 @@ footer a {
 
 footer .left,
 footer .right {
+	align-items: center;
 	display: flex;
 	flex-flow: column nowrap;
-	align-items: center;
 }
 
 footer .right {
@@ -200,29 +200,30 @@ footer .right {
 }
 
 #homepageMain > * {
+	align-self: center;
 	grid-column: 1;
 	grid-row: 1;
-	align-self: center;
 	justify-self: center;
 }
 
 #headerImg {
-	min-height: 600px;
 	height: 100vh;
+	min-height: 600px;
 	object-fit: cover;
 	object-position: right;
 	width: 100%;
 }
 
 #callToAction {
-	display: flex;
-	color: white;
-	flex-flow: column nowrap;
-	justify-content: center;
 	align-items: center;
 	background: rgba(0, 0, 0, 0.5);
-	padding: 25px;
 	border-radius: 10px;
+	color: white;
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 25px;
+	justify-content: center;
+	padding: 25px;
 }
 
 #callToAction h2 {
@@ -230,35 +231,35 @@ footer .right {
 }
 
 #callToAction .btn {
+	background: white;
 	color: black;
 	font-size: 16pt;
-	background: white;
 }
 
 #products {
 	display: flex;
 	flex-flow: row wrap;
+	gap: 30px;
 	justify-content: center;
 	margin-top: 30px;
-	gap: 30px;
 }
 
 .productCard {
+	align-items: center;
 	background-color: rgb(238, 222, 197);
 	border-radius: 10px;
 	display: flex;
 	flex-flow: column wrap;
-	align-items: center;
 	padding: 20px;
 }
 
 .productCard a.productDetail {
+	background-color: rgba(0, 0, 0, 1);
+	border-radius: 5px;
+	color: white;
 	display: block;
 	padding: 10px 15px;
 	text-decoration: none;
-	background-color: rgba(0, 0, 0, 1);
-	color: white;
-	border-radius: 5px;
 	transition: all 0.1s ease-in-out;
 }
 
@@ -268,13 +269,13 @@ footer .right {
 }
 
 #productDetail {
-	margin-top: 50px;
-	justify-self: center;
 	display: grid;
-	grid-template-columns: min-content min-content min-content;
-	grid-auto-rows: min-content;
-	width: fit-content;
 	gap: 0 20px;
+	grid-auto-rows: min-content;
+	grid-template-columns: min-content min-content min-content;
+	justify-self: center;
+	margin-top: 50px;
+	width: fit-content;
 }
 
 #productDetail .breadcrumbs,
@@ -289,14 +290,14 @@ footer .right {
 }
 
 #productDetail .breadcrumbs {
+	font-weight: 800;
 	grid-column: 1;
 	grid-row: 1;
-	font-weight: 800;
 }
 
 #productDetail .breadcrumbs a {
-	text-decoration: none;
 	color: black;
+	text-decoration: none;
 }
 
 #productDetail .breadcrumbs a:hover {
@@ -337,11 +338,11 @@ footer .right {
 	grid-column: 3;
 	grid-row: 4;
 
+	align-self: center;
 	font-weight: bold;
 	height: 2.5em;
-	max-width: fit-content;
 	justify-self: end;
-	align-self: center;
+	max-width: fit-content;
 	white-space: nowrap;
 }
 
@@ -354,27 +355,26 @@ footer .right {
 #productDetail .features {
 	grid-column: 2;
 	grid-row: 4;
-	min-width: 300px;
-	list-style-position: inside;
 	list-style-image: url(../images/icons/coffee-bean.svg);
-	list
+	list-style-position: inside;
+	min-width: 300px;
 }
 
 .rating {
+	align-items: center;
 	display: flex;
 	flex-flow: row nowrap;
-	align-items: center;
 	height: 50px;
 	line-height: 1;
 }
 
 #aboutMain {
-	margin-top: 100px;
-	justify-self: center;
 	display: flex;
 	flex-flow: row wrap;
 	gap: 100px;
 	justify-content: center;
+	justify-self: center;
+	margin-top: 100px;
 }
 
 .person img {
@@ -387,14 +387,14 @@ footer .right {
 }
 
 #contactMain {
-	justify-self: center;
+	align-items: center;
 	background-image: url(../images/loosebeans.jpg);
-	margin-top: 50px;
-	min-height: calc(100vh - 300px);
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
-	align-items: center;
+	justify-self: center;
+	margin-top: 50px;
+	min-height: calc(100vh - 300px);
 }
 
 #contactFormBlock {
